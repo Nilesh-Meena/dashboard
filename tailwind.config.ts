@@ -15,9 +15,11 @@ const config: Config = {
         TWLight: ["TWLight", "sans-serif"],
         TWMedium: ["TWMedium", "sans-serif"],
       },
-    },
-    colors: {
-      "prime-blue": "#1E2640",
+      colors: {
+        "prime-blue": "#1E2640",
+        white: "#FFFFFF",
+        "white-secondary": "rgba(255, 255, 255, 0.1)",
+      },
     },
   },
   plugins: [],
