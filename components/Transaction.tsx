@@ -173,24 +173,6 @@ function Transaction() {
         ))}
         <Pagination />
       </div>
-      {/* Additional styling for the Transaction component */}
-      <div className="h-[48px] flex items-center gap-10 px-3 py-2.5 rounded bg-prime-gray">
-        <div className="md:w-160 lg:w-160 flex flex-col justify-center items-center flex-[1_0_0]">
-          {/* You may add additional content here */}
-        </div>
-        <div className="md:flex-grow lg:flex-grow flex flex-grow gap-1 items-center">
-          {/* You may add additional content here */}
-        </div>
-        <div className="md:w-48 lg:w-56 text-right">Order Amount</div>
-        <div className="md:flex-grow lg:flex-grow flex items-end text-right">
-          <span className="flex-grow">Additional Content</span>
-          <Image
-            src={TransactionFeesSVG}
-            alt="Transaction Fees Icon"
-            className="pb-1 ml-1"
-          />
-        </div>
-      </div>
     </div>
   );
 }
