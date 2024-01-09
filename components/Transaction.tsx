@@ -119,11 +119,6 @@ const DataTable = ({
       <div className="md:flex-grow lg:flex-grow text-right">{orderAmount}</div>
       <div className="md:flex-grow lg:flex-grow flex items-end text-right">
         <span className="flex-grow">{transactionFees}</span>
-        <Image
-          src={TransactionFeesSVG}
-          alt="Transaction Fees Icon"
-          className="pb-1 ml-1"
-        />
       </div>
     </div>
   );
@@ -150,7 +145,9 @@ function Transaction() {
           </div>
           <div className="md:w-48 lg:w-56 text-right">Order Amount</div>
           <div className="md:flex-grow lg:flex-grow flex items-end text-right">
-            <span className="flex-grow">Transaction Fees</span>
+            <span className="text-sm md:text-base flex-grow">
+              Transaction Fees
+            </span>
             <Image
               src={TransactionFeesSVG}
               alt="Transaction Fees Icon"
