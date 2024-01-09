@@ -18,33 +18,6 @@ interface DataTableProps {
   transactionFees?: string;
 }
 
-const DataTable = ({
-  orderId,
-  orderDate,
-  orderAmount,
-  transactionFees,
-}: DataTableProps) => {
-  return (
-    <div className="h-auto flex items-center gap-10 px-3 py-2.5 rounded border-b border-[color:var(--Black-85,#D9D9D9)]">
-      <div className="flex flex-col justify-center items-start gap-[-1px] flex-grow text-blue-secondary">
-        #{orderId}
-      </div>
-      <div className="md:flex-grow lg:flex-grow flex flex-grow gap-1">
-        {orderDate}
-      </div>
-      <div className="md:flex-grow lg:flex-grow text-right">{orderAmount}</div>
-      <div className="md:flex-grow lg:flex-grow flex items-end text-right">
-        <span className="flex-grow">{transactionFees}</span>
-        <Image
-          src={TransactionFeesSVG}
-          alt="Transaction Fees Icon"
-          className="pb-1 ml-1"
-        />
-      </div>
-    </div>
-  );
-};
-
 const Search = () => {
   return (
     <div className="flex gap-4 lg:flex-row w-full flex-grow justify-between self-stretch items-center">
@@ -128,6 +101,36 @@ const Pagination = () => {
     </div>
   );
 };
+// ... (imports remain the same)
+
+const DataTable = ({
+  orderId,
+  orderDate,
+  orderAmount,
+  transactionFees,
+}: DataTableProps) => {
+  return (
+    <div className="h-[48px] flex items-center gap-10 px-3 py-2.5 rounded border-b border-[color:var(--Black-85,#D9D9D9)]">
+      <div className="md:w-[160px] lg:w-[160px] flex flex-col justify-center items-start text-blue-secondary">
+        #{orderId}
+      </div>
+      <div className="md:w-[160px] lg:w-[160px] flex  items-center">
+        {orderDate}
+      </div>
+      <div className="md:flex-grow lg:flex-grow text-right">{orderAmount}</div>
+      <div className="md:flex-grow lg:flex-grow flex items-end text-right">
+        <span className="flex-grow">{transactionFees}</span>
+        <Image
+          src={TransactionFeesSVG}
+          alt="Transaction Fees Icon"
+          className="pb-1 ml-1"
+        />
+      </div>
+    </div>
+  );
+};
+
+// ... (Search, Pagination components remain the same)
 
 function Transaction() {
   return (
@@ -140,17 +143,15 @@ function Transaction() {
         <Search />
 
         {/* Table */}
-        <div className="h-auto flex items-center gap-10 px-3 py-2.5 rounded bg-prime-gray">
-          <div className="md:flex-grow lg:flex-grow flex flex-col justify-center items-start gap-[-1px] flex-[1_0_0]">
+        <div className="h-[48px] flex items-center gap-10 px-3 py-2.5 rounded bg-prime-gray">
+          <div className="md:w-[160px] lg:w-[160px] flex flex-col justify-center items-start">
             Order Id
           </div>
-          <div className="md:flex-grow lg:flex-grow flex flex-grow gap-1">
+          <div className="md:w-[160px] lg:w-[160px] flex flex-grow gap-1 items-center">
             Order Date
             <Image src={DownArrowSmallSVG} alt="Down Arrow Icon" />
           </div>
-          <div className="md:flex-grow lg:flex-grow text-right">
-            Order Amount
-          </div>
+          <div className="md:w-48 lg:w-56 text-right">Order Amount</div>
           <div className="md:flex-grow lg:flex-grow flex items-end text-right">
             <span className="flex-grow">Transaction Fees</span>
             <Image
@@ -171,6 +172,24 @@ function Transaction() {
           />
         ))}
         <Pagination />
+      </div>
+      {/* Additional styling for the Transaction component */}
+      <div className="h-[48px] flex items-center gap-10 px-3 py-2.5 rounded bg-prime-gray">
+        <div className="md:w-160 lg:w-160 flex flex-col justify-center items-center flex-[1_0_0]">
+          {/* You may add additional content here */}
+        </div>
+        <div className="md:flex-grow lg:flex-grow flex flex-grow gap-1 items-center">
+          {/* You may add additional content here */}
+        </div>
+        <div className="md:w-48 lg:w-56 text-right">Order Amount</div>
+        <div className="md:flex-grow lg:flex-grow flex items-end text-right">
+          <span className="flex-grow">Additional Content</span>
+          <Image
+            src={TransactionFeesSVG}
+            alt="Transaction Fees Icon"
+            className="pb-1 ml-1"
+          />
+        </div>
       </div>
     </div>
   );
