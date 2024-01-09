@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 import {
   CompanyLogoSVG,
@@ -23,7 +23,7 @@ import {
 } from "@/public/Icons";
 
 interface PageProps {
-  icon?: { src: string };
+  icon?: StaticImageData;
   text?: string;
   isClicked: boolean;
   onClick: () => void;
