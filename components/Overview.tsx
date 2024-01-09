@@ -9,11 +9,8 @@ interface CardProps {
 
 const Card = ({ text, amount }: CardProps) => {
   return (
-    <div
-      className="flex gap-6 flex-[1_0_0] bg-prime-white
-    shadow-[0px_2px_6px_0px_rgba(26,24,30,0.04)] rounded-[var(--Spacing-spacing-04,8px)]"
-    >
-      <div className="flex flex-col  px-5 py-5 items-start gap-4 flex-shrink-0 ">
+    <div className="flex gap-6 flex-[1_0_0] bg-prime-white shadow-[0px_2px_6px_0px_rgba(26,24,30,0.04)] rounded-[var(--Spacing-spacing-04,8px)]">
+      <div className="flex flex-col px-5 py-5 items-start gap-4 flex-shrink-0">
         <div className="text-[color:var(--Black-30,#4D4D4D)] text-base not-italic font-normal leading-6">
           {text}
         </div>
@@ -29,8 +26,8 @@ function Overview() {
   return (
     <div className="flex flex-col items-start gap-6 self-stretch">
       {/* Overview title */}
-      <div className="flex flex-col items-start gap-5 self-stretch rounded-md ">
-        <div className="flex justify-between items-center  self-stretch">
+      <div className="flex flex-col items-start gap-5 self-stretch rounded-md">
+        <div className="flex justify-between items-center self-stretch">
           <div className="text-[color:var(--Black-12,#1A181E)] text-xl not-italic font-medium leading-7 rounded-md">
             Overview
           </div>

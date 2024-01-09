@@ -52,7 +52,7 @@ const CompanyLogo = () => {
 
 const Pages = ({ icon, text, isClicked, onClick }: PageProps) => {
   const bgColor = isClicked
-    ? "bg-[rgba(255,255,255,0.1)] rounded-md"
+    ? "bg-[rgba(255,255,255,0.1)] rounded-md "
     : "opacity-[0.8]";
 
   return (
@@ -62,7 +62,15 @@ const Pages = ({ icon, text, isClicked, onClick }: PageProps) => {
       className={`flex flex-cols items-start gap-1 w-[208px] px-4 py-2 ${bgColor}`}
     >
       <div className="w-[20px] h-[20px] flex-shrink-0 ">
-        {icon && <Image src={icon} alt="Home Icon" width={20} height={20} />}
+        {icon && (
+          <Image
+            src={icon}
+            alt="Home Icon"
+            width={20}
+            height={20}
+            className="white-icon"
+          />
+        )}
       </div>
       <div className="ml-3 text-[14px] text-white font-medium leading-5  ">
         {text}

@@ -1,4 +1,5 @@
 export { default as HomeSVG } from "./Home.svg";
+export { default as ArrowUpSVG } from "./ArrowUp.svg";
 export { default as DownArrowSVG } from "./DownArrow.svg";
 export { default as DownArrowSmallSVG } from "./DownArrowSmall.svg";
 export { default as DownArrowBlackSVG } from "./DownArrowBlack.svg";
