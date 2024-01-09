@@ -122,12 +122,12 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="w-full h-screen px-[10px] py-4 flex-cols  items-center gap-4 ">
+    <div className=" md:w-[224px] h-screen px-[10px] py-4 flex-cols  items-center gap-4 ">
       {/* nav top */}
       {/* Compnay Logo */}
       <CompanyLogo />
       {/* Pages */}
-      <div className=" mt-8 flex-grow">
+      <div className=" mt-6 flex-grow">
         {pages.map((page, index) => (
           <Pages
             key={index}

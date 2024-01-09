@@ -10,7 +10,7 @@ import Image from "next/image";
 
 function Header() {
   return (
-    <div className="px-8 py-4 flex w-full items-center gap-4 border-b border-solid bg-prime-white">
+    <div className="px-8 py-[12px] flex w-full items-center gap-4 border-b border-solid bg-prime-white">
       {/* Header Payment */}
       <div className="flex w-[360px] items-center gap-4 ">
         <div className="text-[#1A181E] text-[15px] not-italic font-normal leading-[22px]">

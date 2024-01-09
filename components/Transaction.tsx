@@ -33,12 +33,12 @@ const Search = () => {
       {/* Right End Div */}
       <div className="flex lg:items-end gap-3">
         {/* Sort */}
-        <div className="flex px-3 py-[8px] gap-[6px] rounded border border-[color:var(--Black-85,#D9D9D9)] border-solid">
+        <div className="flex px-3 py-[8px] gap-[6px] rounded border border-[color:var(--Black-85,#D9D9D9)] border-solid h-full">
           <div className="text-base not-italic font-normal">Sort</div>
           <Image src={SortSVG} alt="Sort Icon" />
         </div>
         {/* Download */}
-        <div className="rounded border border-[color:var(--Black-85,#D9D9D9)] border-solid px-2 py-2">
+        <div className="flex px-3 py-[10px] h-full rounded border border-[color:var(--Black-85,#D9D9D9)] border-solid">
           <Image src={DownloadSVG} alt="Download Icon" />
         </div>
       </div>
@@ -113,7 +113,7 @@ const DataTable = ({
       <div className="md:w-[160px] lg:w-[160px] flex flex-col justify-center items-start text-blue-secondary">
         #{orderId}
       </div>
-      <div className="md:w-[160px] lg:w-[160px] flex  items-center">
+      <div className="md:w-[160px] ld:w-[160px] flex  items-center">
         {orderDate}
       </div>
       <div className="md:flex-grow lg:flex-grow text-right">{orderAmount}</div>
