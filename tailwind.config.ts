@@ -17,8 +17,12 @@ const config: Config = {
       },
       colors: {
         "prime-blue": "#1E2640",
-        white: "#FFFFFF",
+        "blue-secondary": "#146EB4",
+
+        "prime-white": "#FFFFFF",
+        "prime-gray": "#f2f2f2",
         "white-secondary": "rgba(255, 255, 255, 0.1)",
+        "prime-blue-secondary": "#353c53",
       },
     },
   },

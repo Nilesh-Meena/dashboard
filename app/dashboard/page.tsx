@@ -1,10 +1,12 @@
+import Overview from "@/components/Overview";
+import Transaction from "@/components/Transaction";
 import React from "react";
 
 function Dashboard() {
   return (
-    <div>
-      <div>Hello</div>
-      <h1 className="text-orange-700">This is test</h1>
+    <div className="mx-8 my-8 flex  flex-col items-start gap-8">
+      <Overview />
+      <Transaction />
     </div>
   );
 }
